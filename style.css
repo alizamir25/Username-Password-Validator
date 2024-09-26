@@ -1,31 +1,31 @@
 @import "https://unpkg.com/open-props" layer(support.design-system);
 @import "https://unpkg.com/open-props/normalize.min.css" layer(support.demo);
 @import "https://unpkg.com/open-props/buttons.min.css" layer(support.demo);
-:root {
+:root{
   interpolate-size: allow-keywords;
 }
-.password {
+.password{
   transition: 
     height .3s var(--ease-3),
     opacity .3s var(--ease-3);
 }
-.username:not(:has(:user-valid)) + .password {
+.username:not(:has(:user-valid)) + .password{
   height: 0;
   opacity: 0;
   overflow: clip;
 }
-@layer support.demo {
-  body {
+@layer support.demo{
+  body{
     display: grid;
     place-content: center;
     padding: var(--size-5);
     gap: var(--size-5);
   } 
   
-  fieldset {
+  fieldset{
     display: block;
     
-    > .password {
+    > .password{
       margin-block: var(--size-3);
     }
   }
