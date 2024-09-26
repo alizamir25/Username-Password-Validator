@@ -2,22 +2,17 @@
 @import "https://unpkg.com/open-props/normalize.min.css" layer(support.demo);
 @import "https://unpkg.com/open-props/buttons.min.css" layer(support.demo);
 
-/* 
-  enable auto keyword interpolation  
-  https://developer.chrome.com/docs/css-ui/animate-to-height-auto
-*/
+
 :root {
   interpolate-size: allow-keywords;
 }
 
-/* enable transitions on password input container */
 .password {
   transition: 
     height .3s var(--ease-3),
     opacity .3s var(--ease-3);
 }
 
-/* reveal password when username is valid */
 .username:not(:has(:user-valid)) + .password {
   height: 0;
   opacity: 0;
