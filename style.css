@@ -1,34 +1,19 @@
 @import "https://unpkg.com/open-props" layer(support.design-system);
 @import "https://unpkg.com/open-props/normalize.min.css" layer(support.demo);
 @import "https://unpkg.com/open-props/buttons.min.css" layer(support.demo);
-
-
 :root {
   interpolate-size: allow-keywords;
 }
-
 .password {
   transition: 
     height .3s var(--ease-3),
     opacity .3s var(--ease-3);
 }
-
 .username:not(:has(:user-valid)) + .password {
   height: 0;
   opacity: 0;
   overflow: clip;
 }
-
-
-
-
-
-
-
-
-
-
-
 @layer support.demo {
   body {
     display: grid;
