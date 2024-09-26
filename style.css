@@ -9,7 +9,7 @@
     height .3s var(--ease-3),
     opacity .3s var(--ease-3);
 }
-.username:not(:has(:user-valid)) + .password{
+.username:not(:has(:user-valid))+.password{
   height: 0;
   opacity: 0;
   overflow: clip;
@@ -21,10 +21,8 @@
     padding: var(--size-5);
     gap: var(--size-5);
   } 
-  
   fieldset{
     display: block;
-    
     > .password{
       margin-block: var(--size-3);
     }
